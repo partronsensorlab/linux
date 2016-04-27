@@ -1,0 +1,4 @@
+config DTS201A
+	tristate "Partron dts201a Support"
+	help
+	  Partron Thermopile Sensor dts201a support.
