@@ -1,0 +1,23 @@
+// Definitions for DTS201A temperature sensors from Partron Sensorteam 
+/dts-v1/;
+/plugin/;
+
+/ {
+        compatible = "brcm,bcm2708";
+
+        fragment@0 {
+                target = <&i2c_arm>;
+                __overlay__ {
+                        #address-cells = <1>;
+                        #size-cells = <0>;
+                        status = "okay";
+
+                        dts210a@40 {
+                                compatible = "partron,dts201a";
+                                reg = <0x40>;
+                                default-oversampling = <3>;
+                                status = "okay";
+                        };
+                };
+        };
+};
