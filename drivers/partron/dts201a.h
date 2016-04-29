@@ -39,7 +39,7 @@
 
 #define	DTS_I2C_WRITE	0
 #define	DTS_I2C_READ	1
-#define	DTS201A_SADDR	(0x00>>1)
+#define	DTS201A_SADDR	(0x40>>1)
 
 #define	DTS201A_ID0 0x0000
 #define	DTS201A_ID1 0x0000
